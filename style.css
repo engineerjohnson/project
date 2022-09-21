@@ -1,0 +1,238 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	width: 1100px;
+	margin:0px auto;
+}
+.connection{
+	display: flex;
+	justify-content: flex-end;
+	padding:5px ;
+	background: rgb(236, 236, 236);
+}
+.connection .fb{
+	color: blue;
+}
+.connection .fb::after{
+	content: "|";
+	color: gray;
+	padding: 5px ;
+}
+.connection .tw{
+	color: rgb(83, 210, 210);
+}
+.header{
+	display: flex;
+	justify-content:space-between;
+}
+.headerlist{
+	display: flex;
+	align-items: center;
+}
+.headerlist li a{
+	padding: 10px;
+	color: rgb(107, 211, 176);
+	font-weight: bold;
+	font-size: 15px;
+	position: relative;
+}
+.headerlist a::after{
+	content: "";
+	background: rgb(85, 197, 160);
+	width: 0;
+	height: 3px;
+	transition: 0.3s;
+	transform: translateX(-50%);
+	position: absolute;
+	left: 50%;
+	bottom: 0px;
+	display: block;
+}
+.headerlist a:hover::after{
+	width: 100%;
+}
+.middle{
+	background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png
+	);
+	height: 350px;
+	background-size: 100%;
+	display: flex;
+	align-items: center;
+
+}
+.middle h1{
+	color: aliceblue;
+	font-size: 40px;
+	line-height: 60px;
+	padding:15px ;
+	background-color: rgba(0, 0, 0, 0.25);
+	width: 100%;
+}
+.menu{
+	display: flex;
+	justify-content: space-around;
+}
+.menu_html,.menu_RWD,.menu_Jquery{
+	line-height: 20px;
+	font-size: 15px;
+	width: 300px;
+	box-shadow:1px 1px 3px -0.5px grey;
+	margin: 10px;
+	padding: 15px;
+}
+.menu h3{
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.Jquerylist li{
+	list-style-position: inside;
+	list-style-type: square;
+}
+.content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 60px;
+}
+.content h2{
+	margin: 30px;
+	font-size: 25px;
+	font-weight: bolder;
+}
+.content table{
+	width: 80%;
+	padding-top: 15px;
+}
+.content th,td{
+	text-align: left;
+	padding:10px 15px;
+	border-top: 1px solid #a7a5a5;
+	border-bottom: 1px solid #bebdbd;
+	font-size: 15px;
+}
+.content th{
+	background: #f3f2f2;;
+}
+.content tr:hover{
+	background:#b8e2d7;
+}
+.content_focus{
+	color:#2AB18E;
+}
+.table{
+	width: 1100px;
+	height: 400px;
+	margin-top: 60px;
+	background:linear-gradient(#00664D, #009671);
+}
+.table h2{
+	text-align: center;
+	color: azure;
+	padding: 20px;
+	font-size: 30px;
+	font-weight: bold;
+}
+.table_content{
+	display: flex;
+	justify-content: space-around;
+}
+textarea{
+	resize: none;
+    border: none;
+    border-radius: 5px;
+    width: 45%;
+	height: 250px;
+}
+.information{
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+input{
+	width: 400px;
+	height: 30px;
+	margin: 0px 0px;
+	margin-bottom:25px;
+	border-radius: 3px ;
+	border: none;
+}
+label{
+	margin-bottom: 5px;
+}
+.buttom{
+	width: 20%;
+	height: 30px;
+	background-color:#00CC99;
+	border: none;
+	color: aliceblue;
+	border-radius: 3px;
+	text-align: center;
+	align-self: flex-end;
+	cursor: pointer;
+}
+.buttom:hover{
+	background-color: aliceblue;
+	color: #00CC99;
+}
+.footer{
+	padding: 35px 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.footer a{
+	color: rgb(192, 60, 60);
+}
